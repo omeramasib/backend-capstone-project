@@ -6,8 +6,6 @@ from .serializers import MenuSerializer, BookingSerializer, UserSerializer
 from django.contrib.auth.models import User
 from rest_framework.permissions import IsAuthenticated
 
-def sayHello(request):
- return HttpResponse('Hello World')
 
 def index(request):
  return render(request, 'index.html', {})
